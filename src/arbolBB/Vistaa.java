@@ -289,11 +289,11 @@ public class Vistaa extends javax.swing.JFrame {
 
     private void InOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InOrdenActionPerformed
         // TODO add your handling code here:
-        String recorrido = null;
+        //String recorrido = null;
        // recorrido = this.simulador.inOrden();
-        
-        this.impresion.setText("");
-        this.impresion.setText(recorrido);
+        Arbol.InOrden(impresion);
+        //this.impresion.setText("");
+        //this.impresion.setText(recorrido);
     }//GEN-LAST:event_InOrdenActionPerformed
 
     private void PreOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PreOrdenActionPerformed

@@ -8,6 +8,7 @@ package arbolBB;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -181,5 +182,18 @@ public class ArbolBB implements Arbol {
 
      public JPanel getdibujo() {
         return new ArbolExpresionGrafico(this);
+    }
+     
+    public void InOrden(JTextArea ta){
+        InOrden(this.raiz,ta);
+    }
+    private void InOrden(Nodo r,JTextArea ta){
+        if (r==null) {
+            
+        }else{
+           InOrden(r.HIzq,ta);
+           ta.append(r.dato+" -");
+           InOrden(r.HDer,ta);
+        }
     }
 }
